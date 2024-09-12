@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background: url("../public/kota-bg.gif");
+  color: rgb(var(--foreground-rgb));
+  background-color: gray;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.btn-danger {
+  @apply bg-rose-600 text-rose-50 rounded-md border p-3;
+}
+.katakata-hari {
+  @apply border-r border-b border-l border-gray-400  bg-white rounded-b  p-3 flex flex-row justify-between text-slate-900;
+}
